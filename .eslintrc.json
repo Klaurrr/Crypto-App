@@ -14,6 +14,9 @@
       "warn",
       "always"
     ],
+    "no-unused-vars": [
+      "off"
+    ],
     "indent": [
       2,
       "tab"
@@ -28,6 +31,7 @@
       "off",
       100
     ],
+    "require-jsdoc": 0,
     "simple-import-sort/imports": [
       "error",
       {
@@ -57,9 +61,8 @@
         ]
       }
     ],
-    "require-jsdoc": "off",
+    "require -jsdoc": "off",
     "simple-import-sort/exports": "error",
-    "no-unused-vars": "warn",
     "operator-linebreak": "off"
   }
 }

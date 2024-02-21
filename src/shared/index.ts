@@ -1,3 +1,3 @@
-import Pages from "./configs/Router";
+import { Pages } from "./configs/Router";
 
 export { Pages };

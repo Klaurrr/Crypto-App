@@ -1,5 +1,3 @@
-enum Pages {
+export enum Pages {
 	HOME = "/Home",
 }
-
-export default Pages;
