@@ -1,3 +1,4 @@
+import { QueryClient, QueryClientProvider } from "react-query";
 import type { Metadata } from "next";
 
 import "./styles/globals.scss";
@@ -12,11 +13,15 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	const queryClient = new QueryClient();
+
 	return (
-		<html lang="en">
-			<body>
-				<div className="page">{children}</div>
-			</body>
-		</html>
+		<QueryClientProvider client={queryClient}>
+			<html lang="en">
+				<body>
+					<div className="page">{children}</div>
+				</body>
+			</html>
+		</QueryClientProvider>
 	);
 }
